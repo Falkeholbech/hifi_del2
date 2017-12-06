@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"> 
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HI-FI </a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html">Forside <span class="sr-only">(current)</span></a></li>
+                  <li><a href="produkt.html">Produkter</a></li>
+                  <li><a href="kontakt.html">Kontakt</a></li>
+                  <li><a href="admin.html">Kontakt</a></li>
+                  
+                </ul>
+                <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Search</button>
+                </form>
+                  </li>
+                </ul>
+               
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+    </div>
+
+    <main>
+      <h1 class="prudkth1">Produkt</h1>
+      <select id="selecttype">
+          <option value="0">Alle...</option>
+          <option value="1">CD Afspillere</option>
+          <option value="2">DVD Afspillere</option>
+          <option value="3">Effektforstærkere</option>
+          <option value="4">Forforstærkere</option>
+          <option value="5">Højtalere</option>
+          <option value="6">Int. Forstærkere</option>
+          <option value="7">Pladespillere</option>
+          <option value="8">Rørforstærkere</option>
+  </select>
+          <div id="content"></div>
+<!-- 
+    Navn:<input type="text" id="navn"><br>
+    Type: <input type="text" id="type"><br>
+    Pris: <input type="text" id="pris"><br>
+    Billede: <input type="text" id="billede"><br>
+    <button id="gem">Gem</button> -->
+    </main>
+
+    <script src="js/produkt.js">
+      
+      </script>
+
+    <!-- <script>
+
+
+      // fetch('http://localhost:1337/produkt')
+      //     .then((response) => {
+      //         // grib svarets indhold (body) og send det som et json objekt til næste .then()
+      //         return response.json();
+      //     })
+      //     .then((data) => {
+      //         // nu er json objektet lagt ind i data variablen, udskriv data
+      //         console.log(data);
+      //         document.getElementById('content').innerHTML = data[0].navn + " " + data[0].pris;
+      //     })
+  </script> -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+</body>
+</html>
