@@ -2,7 +2,7 @@ const restify = require('restify');
 const path = require('path');
 const corsmiddleware = require('restify-cors-middleware');
 
-const port = process.env.port || 1337;
+const port = process.env.port || 3000;
 
 const app = restify.createServer({
    name: 'Administrations Panel Eksempel',

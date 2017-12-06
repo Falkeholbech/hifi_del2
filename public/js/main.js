@@ -23,7 +23,7 @@ function getParameterByName(name, url) {
             mode: 'cors',
             cache: 'default'
          };
-         let request = new Request(`http://localhost:1337/products/${id}`, init);
+         let request = new Request(`http://146.185.128.66:3000/products/${id}`, init);
    
          fetch(request)
             .then(response => {
@@ -155,7 +155,7 @@ function getParameterByName(name, url) {
    
             if (name != '' && description != '' && !isNaN(price)) {
                document.querySelector('#productsFormError').innerHTML = "";
-               let url = `http://localhost:1337/products/`;
+               let url = `http://146.185.128.66:3000/products/`;
                let headers = new Headers();
                headers.append('Content-Type', 'application/json');
    
@@ -191,7 +191,7 @@ function getParameterByName(name, url) {
       }
    
       // hent alle produkter og udskriv listen
-      fetch('http://localhost:1337/products')
+      fetch('http://146.185.128.66:3000/products')
          .then((response) => {
             if (response.ok) {
                return response.json();
